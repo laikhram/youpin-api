@@ -16,6 +16,7 @@ const summarizeState = require('./summarize-state');
 const summary = require('./summary');
 const user = require('./user');
 const video = require('./video');
+const chatbot = require('./chatbot');
 
 module.exports = function () { // eslint-disable-line func-names
   const app = this;
@@ -37,4 +38,5 @@ module.exports = function () { // eslint-disable-line func-names
   app.configure(summary);
   app.configure(user);
   app.configure(video);
+  app.configure(chatbot);
 };
